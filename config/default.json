@@ -9,7 +9,7 @@
   "authentication": {
     "entity": "admin",
     "service": "admins",
-    "secret": "UngvJUAln7vPKUvoe2Qf7LHJuJs=",
+    "secret": "WJSZ705R9ReEVGbGg7sSQg9Y5nU=",
     "authStrategies": [
       "jwt",
       "local"
@@ -28,5 +28,5 @@
       "passwordField": "password"
     }
   },
-  "mongodb": "mongodb://8.219.228.62:27017/jackSDB"
+  "mysql": "mysql://xhb:@8.219.228.62:3306/xhb"
 }

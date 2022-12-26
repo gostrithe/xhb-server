@@ -1,9 +1,11 @@
 // Initializes the `admins` service on path `/admins`
 const { Admins } = require('./admins.class');
+const createModel = require('../../models/admins.model');
 const hooks = require('./admins.hooks');
 
 module.exports = function (app) {
   const options = {
+    Model: createModel(app),
     paginate: app.get('paginate')
   };
 
