@@ -24,11 +24,11 @@ module.exports = function (app) {
     },
     presentExp: {
       type: DataTypes.STRING,
-      allowNull: true
+      allowNull: false
     },
     remark: {
       type: DataTypes.STRING,
-      allowNull: true
+      allowNull: false
     }
   },
   {

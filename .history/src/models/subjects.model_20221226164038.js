@@ -12,23 +12,23 @@ module.exports = function (app) {
     },
     type:{
       type: DataTypes.STRING,
-      allowNull: true
+      allowNull: false
     },
     color: {
       type: DataTypes.STRING,
-      allowNull: true
+      allowNull: false
     },
     deductedLessonTime: {
       type: DataTypes.STRING,
-      allowNull: true
+      allowNull: false
     },
     presentExp: {
       type: DataTypes.STRING,
-      allowNull: true
+      allowNull: false
     },
     remark: {
       type: DataTypes.STRING,
-      allowNull: true
+      allowNull: false
     }
   },
   {

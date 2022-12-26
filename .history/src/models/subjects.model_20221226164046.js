@@ -28,7 +28,7 @@ module.exports = function (app) {
     },
     remark: {
       type: DataTypes.STRING,
-      allowNull: true
+      allowNull: false
     }
   },
   {

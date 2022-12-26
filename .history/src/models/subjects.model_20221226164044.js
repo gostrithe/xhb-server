@@ -20,15 +20,15 @@ module.exports = function (app) {
     },
     deductedLessonTime: {
       type: DataTypes.STRING,
-      allowNull: true
+      allowNull: false
     },
     presentExp: {
       type: DataTypes.STRING,
-      allowNull: true
+      allowNull: false
     },
     remark: {
       type: DataTypes.STRING,
-      allowNull: true
+      allowNull: false
     }
   },
   {

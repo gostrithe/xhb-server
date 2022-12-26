@@ -8,27 +8,27 @@ module.exports = function (app) {
   const subjects = sequelizeClient.define('subjects', {
     subject: {
       type: DataTypes.STRING,
-      allowNull: true
+      allowNull: ture
     },
     type:{
       type: DataTypes.STRING,
-      allowNull: true
+      allowNull: false
     },
     color: {
       type: DataTypes.STRING,
-      allowNull: true
+      allowNull: false
     },
     deductedLessonTime: {
       type: DataTypes.STRING,
-      allowNull: true
+      allowNull: false
     },
     presentExp: {
       type: DataTypes.STRING,
-      allowNull: true
+      allowNull: false
     },
     remark: {
       type: DataTypes.STRING,
-      allowNull: true
+      allowNull: false
     }
   },
   {
