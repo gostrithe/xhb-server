@@ -11,29 +11,29 @@ module.exports = function (app) {
       allowNull: false
     },
     sphone: {
-      type: DataTypes.NUMBER,
+      type: DataTypes.STRING,
       allowNull: false
     },
     stimecard: {
-      type: DataTypes.NUMBER,
+      type: DataTypes.STRING,
       allowNull: false
     },
     sface: {
       type: DataTypes.STRING,
     },
     scode: {
-      type: DataTypes.NUMBER,
+      type: DataTypes.STRING,
       allowNull: false
     },
     sage: {
-      type: DataTypes.NUMBER,
+      type: DataTypes.STRING,
       allowNull: false
     },
     sbirthday: {
       type: DataTypes.STRING,
     },
     spoints: {
-      type: DataTypes.NUMBER,
+      type: DataTypes.STRING,
     },
     stutor: {
       type: DataTypes.STRING,
