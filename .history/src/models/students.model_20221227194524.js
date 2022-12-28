@@ -74,10 +74,6 @@ module.exports = function (app) {
       type: DataTypes.STRING,
       allowNull: true
     },
-    info: {
-      type: DataTypes.STRING,
-      allowNull: true
-    },
     tag: {
       type: DataTypes.STRING,
       allowNull: true

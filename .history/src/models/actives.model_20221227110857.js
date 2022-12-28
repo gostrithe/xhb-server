@@ -5,87 +5,55 @@ const DataTypes = Sequelize.DataTypes;
 
 module.exports = function (app) {
   const sequelizeClient = app.get('sequelizeClient');
-  const students = sequelizeClient.define('students', {
+  const actives = sequelizeClient.define('actives', {
+    sname: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
     status: {
       type: DataTypes.STRING,
       allowNull: false
     },
-    name: {
+    sphone: {
       type: DataTypes.STRING,
       allowNull: false
     },
-    phone: {
-      type: DataTypes.STRING,
-      allowNull: false
-    },
-    phoneUser: {
-      type: DataTypes.STRING,
-      allowNull: false
-    },
-    age: {
+    stimecard: {
       type: DataTypes.STRING,
       allowNull: true
     },
-    sex: {
+    sface: {
       type: DataTypes.STRING,
       allowNull: true
     },
-    birthday: {
+    scode: {
       type: DataTypes.STRING,
       allowNull: true
     },
-    school: {
+    sage: {
       type: DataTypes.STRING,
       allowNull: true
     },
-    grade: {
+    sbirthday: {
       type: DataTypes.STRING,
       allowNull: true
     },
-    source: {
+    spoints: {
       type: DataTypes.STRING,
       allowNull: true
     },
-    referrer: {
+    stutor: {
       type: DataTypes.STRING,
       allowNull: true
     },
-    altPhone: {
+    sstatus: {
       type: DataTypes.STRING,
       allowNull: true
     },
-    Reserve: {
+    scourse: {
       type: DataTypes.STRING,
       allowNull: true
-    },
-    address: {
-      type: DataTypes.STRING,
-      allowNull: true
-    },
-    level: {
-      type: DataTypes.STRING,
-      allowNull: true
-    },
-    follow: {
-      type: DataTypes.STRING,
-      allowNull: true
-    },
-    followMan: {
-      type: DataTypes.STRING,
-      allowNull: true
-    },
-    info: {
-      type: DataTypes.STRING,
-      allowNull: true
-    },
-    tag: {
-      type: DataTypes.STRING,
-      allowNull: true
-    },
-    remark: {
-      type: DataTypes.STRING,
-      allowNull: true
-    },
+    }
   }, {
     hooks: {
       beforeCount(options) {
@@ -95,10 +63,10 @@ module.exports = function (app) {
   });
 
   // eslint-disable-next-line no-unused-vars
-  students.associate = function (models) {
+  actives.associate = function (models) {
     // Define associations here
     // See https://sequelize.org/master/manual/assocs.html
   };
 
-  return students;
+  return actives;
 };

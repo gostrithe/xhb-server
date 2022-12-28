@@ -54,10 +54,6 @@ module.exports = function (app) {
       type: DataTypes.STRING,
       allowNull: true
     },
-    Reserve: {
-      type: DataTypes.STRING,
-      allowNull: true
-    },
     address: {
       type: DataTypes.STRING,
       allowNull: true
@@ -71,10 +67,6 @@ module.exports = function (app) {
       allowNull: true
     },
     followMan: {
-      type: DataTypes.STRING,
-      allowNull: true
-    },
-    info: {
       type: DataTypes.STRING,
       allowNull: true
     },

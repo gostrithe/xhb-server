@@ -74,7 +74,7 @@ module.exports = function (app) {
       type: DataTypes.STRING,
       allowNull: true
     },
-    info: {
+    followMan: {
       type: DataTypes.STRING,
       allowNull: true
     },
