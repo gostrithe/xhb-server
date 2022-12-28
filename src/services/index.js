@@ -5,6 +5,7 @@ const teachers = require('./teachers/teachers.service.js');
 const subjects = require('./subjects/subjects.service.js');
 const employeeInformation = require('./employee-information/employee-information.service.js');
 const actives = require('./actives/actives.service.js');
+const referrer = require('./referrer/referrer.service.js');
 // eslint-disable-next-line no-unused-vars
 module.exports = function (app) {
   app.configure(admins);
@@ -14,4 +15,5 @@ module.exports = function (app) {
   app.configure(subjects);
   app.configure(employeeInformation);
   app.configure(actives);
+  app.configure(referrer);
 };
