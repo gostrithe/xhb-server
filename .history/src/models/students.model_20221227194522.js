@@ -54,7 +54,7 @@ module.exports = function (app) {
       type: DataTypes.STRING,
       allowNull: true
     },
-    Reserve: {
+    altPhone: {
       type: DataTypes.STRING,
       allowNull: true
     },
@@ -74,23 +74,11 @@ module.exports = function (app) {
       type: DataTypes.STRING,
       allowNull: true
     },
-    info: {
-      type: DataTypes.STRING,
-      allowNull: true
-    },
     tag: {
       type: DataTypes.STRING,
       allowNull: true
     },
     remark: {
-      type: DataTypes.STRING,
-      allowNull: true
-    },
-    user: {
-      type: DataTypes.STRING,
-      allowNull: true
-    },
-    type: {
       type: DataTypes.STRING,
       allowNull: true
     },

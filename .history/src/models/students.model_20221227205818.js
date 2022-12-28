@@ -86,14 +86,6 @@ module.exports = function (app) {
       type: DataTypes.STRING,
       allowNull: true
     },
-    user: {
-      type: DataTypes.STRING,
-      allowNull: true
-    },
-    type: {
-      type: DataTypes.STRING,
-      allowNull: true
-    },
   }, {
     hooks: {
       beforeCount(options) {

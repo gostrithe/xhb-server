@@ -90,7 +90,7 @@ module.exports = function (app) {
       type: DataTypes.STRING,
       allowNull: true
     },
-    type: {
+    remark: {
       type: DataTypes.STRING,
       allowNull: true
     },
